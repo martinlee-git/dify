@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/scripts/stress-test/README.md
+- 미러 경로: `scripts/stress-test/README.md`
+
+## 한글 요약
+
+Dify 스트레스 테스트 스위트 SSE(Server Sent Events) 스트리밍 성능 측정에 최적화된 Locust를 사용하여 Dify 워크플로 실행을 위한 고성능 스트레스 테스트 스위트입니다. 추적된 주요 지표 스트레스 테스트는 4가지 중요한 SSE 성능 지표에 중점을 둡니다. 1. 활성 SSE 연결 열려 있는 SSE 연결의 실시간 개수 1. 새로운 연결 속도 초당 연결 수(conn/sec) 1. 첫 번째 SSE 이벤트가 도착할 때까지의 TTFE(Time to First Event) 대기 시간 1. 이벤트 처리량 초당 이벤트(이벤트/초) 기능 True SSE 지원: 조기 연결 종료 없이 서버 전송 이벤트 스트리밍을 적절하게 처리합니다. 실시간 지표: 라이브 테스트 중 5초마다 보고 포괄적인 추적: 활성 연결 모니터링 연결 설정 속도 이벤트 처리 처리량 TTFE 분포 분석 다중 인터페이스: 실시간 모니터링을 위한 웹 UI(<http://localhost:8089) 주기적인 콘솔 업데이트가 포함된 헤드리스 모드 세부 보고서: 전체 속도 및
+
+## 핵심 발췌
+
+평균 간편한 구성: 설정에서 기존 API 키 구성 사용 측정 대상 스트레스 테스트는 다음 주요 측정항목을 사용하여 SSE 스트리밍 성능에 중점을 둡니다. 기본 끝점: /v1/workflows/run 스트레스 테스트는 포괄적인 SSE 측정항목 추적을 사용하여 단일 끝점을 테스트합니다. 요청 유형: 워크플로 실행에 대한 POST 요청 API 응답 유형: SSE(서버 전송 이벤트) 스트림 페이로드: 구성 가능한 풀의 무작위 질문 동시성: 1~1000+ 동시 사용자로 구성 가능 주요 성능 지표 1. 활성 연결 측정 대상: 언제든지 열려 있는 동시 SSE 연결 수 중요한 이유: 병렬 스트림을 처리하는 시스템의 능력을 보여줍니다. 좋은 값: 부하가 걸려도 중단 없이 안정적으로 유지되어야 합니다. 2. 연결 속도(conn/sec) 측정 대상
+
+## 원문 내용
+
 # Dify Stress Test Suite
 
 A high-performance stress test suite for Dify workflow execution using **Locust** - optimized for measuring Server-Sent Events (SSE) streaming performance.
