@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/docker/README.md
+- 미러 경로: `docker/README.md`
+
+## 한글 요약
+
+Docker 배포를 위한 README Docker Compose를 사용하여 Dify를 배포하기 위한 새로운 docker 디렉터리에 오신 것을 환영합니다. 이 README에는 기존 사용자를 위한 업데이트, 배포 지침 및 마이그레이션 세부 정보가 요약되어 있습니다. 업데이트된 내용 Certbot 컨테이너: 이제 docker compose.yaml에는 SSL 인증서 관리를 위한 certbot이 포함되어 있습니다. 이 컨테이너는 자동으로 인증서를 갱신하고 보안 HTTPS 연결을 보장합니다.\ 자세한 내용은 docker/certbot/README.md를 참조하세요. 영구 환경 변수: 필수 시작 기본값은 .env.example에 제공되고 로컬 값은 .env에 저장되어 배포 전반에 걸쳐 구성이 유지됩니다. .env란 무엇입니까? </br </br .env 파일은 로컬 시작 파일입니다. 기본 배포를 위해 .env.example에서 복사합니다. 선택적 고급 설정은 envs/ .env.example 파일에 있습니다. 통합 벡터 데이터베이스 서비스: 이제 모든 벡터 데이터베이스 서비스가 단일 Docker Compose 파일 docker compose.yaml에서 관리됩니다. 당신은 다른 ve 사이에서 전환할 수 있습니다
+
+## 핵심 발췌
+
+.env 파일에서 VECTOR STORE 환경 변수를 설정하여 ctor 데이터베이스를 관리합니다. docker compose.yaml을 사용하여 Dify를 배포하는 방법 1. 전제 조건: Docker 및 Docker Compose가 시스템에 설치되어 있는지 확인합니다. 2. 환경설정 : docker 디렉터리로 이동합니다. .env.example을 .env로 복사합니다. 필수 시작 기본값을 변경해야 하는 경우 .env를 사용자 정의하세요. 고급 설정이 필요한 경우 .example 접미사 없이 envs/에서 선택적 파일을 복사하세요. 선택 사항(고급 배포의 경우): .env.example에서 복사된 전체 .env 파일을 유지 관리하는 경우 환경 동기화 도구를 사용하여 사용자 지정 설정을 유지하면서 최신 .env.example 업데이트와 일치하도록 유지할 수 있습니다. 아래의 환경 변수 동기화 섹션을 참조하세요. 3. 서비스 실행 : docker compo 실행
+
+## 원문 내용
+
 ## README for docker Deployment
 
 Welcome to the new `docker` directory for deploying Dify using Docker Compose. This README outlines the updates, deployment instructions, and migration details for existing users.
