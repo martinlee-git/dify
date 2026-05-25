@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/sdks/nodejs-client/README.md
+- 미러 경로: `sdks/nodejs-client/README.md`
+
+## 한글 요약
+
+Dify Node.js SDK Dify API를 위한 Node.js SDK로, Dify를 Node.js 애플리케이션에 쉽게 통합할 수 있습니다. 설치 사용법 SDK를 설치한 후 프로젝트에서 다음과 같이 사용할 수 있습니다. 참고: 앱 엔드포인트는 앱 API 토큰을 사용합니다. 기술 자료 및 작업 영역 끝점은 데이터 세트 API 토큰을 사용합니다. 채팅/완료에는 요청 페이로드에 안정적인 사용자 식별자가 필요합니다. 스트리밍 응답의 경우 반환된 AsyncIterable을 반복합니다. 텍스트를 수집하려면 stream.toText()를 사용하세요. 유지 관리자 이 패키지는 저장소 작업 공간에서 게시됩니다. pnpm 설치를 통해 리포지토리 루트에서 종속성을 설치한 다음 연습 실행 및 게시를 위해 ./scripts/publish.sh를 사용하여 카탈로그: 릴리스 전에 종속성을 해결합니다. 라이센스 이 SDK는 MIT 라이센스에 따라 출시됩니다.
+
+## 핵심 발췌
+
+Dify Node.js SDK Dify API를 위한 Node.js SDK로, Dify를 Node.js 애플리케이션에 쉽게 통합할 수 있습니다. ## 설치 ## SDK 설치 후 사용법
+
+## 원문 내용
+
 # Dify Node.js SDK
 
 This is the Node.js SDK for the Dify API, which allows you to easily integrate Dify into your Node.js applications.
