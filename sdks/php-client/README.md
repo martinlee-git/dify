@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/sdks/php-client/README.md
+- 미러 경로: `sdks/php-client/README.md`
+
+## 한글 요약
+
+Dify PHP SDK 이것은 Dify API를 위한 PHP SDK로, Dify를 PHP 애플리케이션에 쉽게 통합할 수 있습니다. 요구 사항 PHP 7.2 이상 Guzzle HTTP 클라이언트 라이브러리 사용법 예제를 시도하려면 이 디렉터리에서 Composer install을 실행하면 됩니다. 기존 프로젝트에서 dify client.php를 프로젝트에 복사하고 다음 항목을 작곡가.json 파일에 병합한 후 작곡가 설치 && 작곡가 덤프 자동 로드를 실행하여 설치합니다. Guzzle에는 7.9가 필요하지 않으며 다른 버전은 테스트되지 않았지만 시도해 볼 수 있습니다. SDK를 설치한 후 다음과 같이 프로젝트에서 사용할 수 있습니다. '여기에 있는 API 키'를 실제 Dify API 키로 바꾸세요. 라이센스 이 SDK는 MIT 라이센스에 따라 출시됩니다.
+
+## 핵심 발췌
+
+Dify PHP SDK 이것은 Dify API를 위한 PHP SDK로, Dify를 PHP 애플리케이션에 쉽게 통합할 수 있습니다. ## 요구사항 PHP 7.2 이상 Guzzle HTTP 클라이언트 라이브러리 ## 사용법 사용해보고 싶다면
+
+## 원문 내용
+
 # Dify PHP SDK
 
 This is the PHP SDK for the Dify API, which allows you to easily integrate Dify into your PHP applications.
