@@ -1,3 +1,20 @@
+# eu-ai-act-준수
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/docs/eu-ai-act-compliance.md
+- 미러 경로: `docs/eu-ai-act-compliance.md`
+
+## 한글 요약
+
+Dify 배포자를 위한 EU AI 법 준수 가이드 Dify는 RAG 파이프라인, 에이전트 및 AI 워크플로를 구축하기 위한 LLMOps 플랫폼입니다. 자체 호스팅이든 클라우드 제공업체를 사용하든 관계없이 EU에 Dify를 배포하는 경우 EU AI Act가 배포에 적용됩니다. 이 가이드에서는 규정에서 요구하는 사항과 Dify의 아키텍처가 해당 요구 사항에 어떻게 매핑되는지를 다룹니다. 귀하의 시스템이 범위 내에 있습니까? 제12조, 13조, 14조의 세부 의무는 EU AI 법의 부록 III에 정의된 고위험 AI 시스템에만 적용됩니다. Dify 애플리케이션은 다음 용도로 사용되는 경우 위험이 높습니다. 채용 및 HR - 후보자 선별, 직원 성과 평가, 작업 할당 신용 점수 및 보험 - 신용도 평가 또는 보험료 설정 법 집행 - 프로파일링, 범죄 위험 평가, 국경 통제 중요 인프라 - 에너지, 물, 운송 또는 통신 시스템 관리 교육 평가 - 학생 채점, 입학 결정 필수 공공 서비스 - 적격성 평가
+
+## 핵심 발췌
+
+혜택, 주택 또는 응급 서비스에 대한 대부분의 Dify 배포(고객 대면 챗봇, 내부 지식 기반, 콘텐츠 생성 워크플로)는 위험이 높지 않습니다. 귀하의 Dify 애플리케이션이 위 카테고리 중 하나에 속하지 않는 경우: 사용자가 애플리케이션과 직접 상호 작용하는 경우 제50조(최종 사용자 투명성)가 여전히 적용됩니다. 아래 제50조 섹션을 참조하세요. 개인 데이터를 처리하는 경우에도 GDPR이 적용됩니다. 아래 GDPR 섹션을 참조하세요. 고위험 의무(제9조 15항)는 적용될 가능성이 낮지만 위험 분류는 상황에 따라 다릅니다. 법적 검토 없이 자체 분류하지 마십시오. 기본 의무로서 50조(투명성) 및 GDPR(데이터 보호)에 중점을 둡니다. 귀하의 사용 사례가 고위험에 해당하는지 확실하지 않은 경우 자격을 갖춘 법률 전문가에게 문의하세요.
+
+## 원문 내용
+
 # EU AI Act Compliance Guide for Dify Deployers
 
 Dify is an LLMOps platform for building RAG pipelines, agents, and AI workflows. If you deploy Dify in the EU — whether self-hosted or using a cloud provider — the EU AI Act applies to your deployment. This guide covers what the regulation requires and how Dify's architecture maps to those requirements.
