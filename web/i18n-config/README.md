@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/web/i18n-config/README.md
+- 미러 경로: `web/i18n-config/README.md`
+
+## 한글 요약
+
+국제화(i18n) 소개 이 디렉토리에는 i18n 도구 및 구성이 포함되어 있습니다. 번역 파일은 web/i18n에 있습니다. 파일 구조 기본 언어는 영어를 사용합니다. 번역 파일은 언어별로 정리된 다음 모듈별로 정리됩니다. 예를 들어 앱 모듈의 영어 번역은 web/i18n/en US/app.json에 있습니다. 번역 파일은 플랫 키(점 표기법)가 포함된 JSON입니다. i18next는 keySeparator: false로 구성되므로 점이 키의 일부입니다. 네임스페이스는 camelCase 파일 이름(예: app debug.json appDebug)이므로 useTranslation('appDebug') 또는 t('key', { ns: 'appDebug' })를 사용합니다. 새 언어를 추가하거나 기존 번역을 수정하려면 언어 폴더에서 .json 파일을 생성하거나 업데이트하세요. 예를 들어, 프랑스어 번역을 추가하려는 경우 fr FR 새 폴더를 만들고 그 안에 번역 파일을 추가할 수 있습니다. 기본적으로 LanguagesSupported를 사용하여 지원되는 언어를 결정합니다. 예를 들어 로그인 페이지 및 설정에서
+
+## 핵심 발췌
+
+페이지에서는 LanguagesSupported를 사용하여 지원되는 언어를 결정하고 언어 선택 드롭다운에 표시합니다. 예 1. 새 언어에 대한 새 폴더를 만듭니다. 1. 새 폴더에서 번역 .json 파일을 수정합니다. 키를 플랫하게 유지합니다(예:Dialog.title). 1. 언어.ts 파일에 새 언어를 추가합니다. 1. 언어가 지원되는 경우 지원 필드를 true로 표시하는 것을 잊지 마십시오. 1. 때로는 서버 측에서 일부 변경을 수행해야 할 수도 있습니다. 이 파일도 변경해주세요. 👇 <https://github.com/langgenius/dify/blob/61e4bbabaf2758354db4073cbea09fdd21a5bec1/api/constants/언어s.py#L5 참고: I18nText 유형은 LanguagesSupported에서 자동으로 파생되므로 수동으로 유형을 추가할 필요가 없습니다. 정리 그게 다야! 새로운 l을 성공적으로 추가했습니다.
+
+## 원문 내용
+
 # Internationalization (i18n)
 
 ## Introduction
