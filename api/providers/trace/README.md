@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/api/providers/trace/README.md
+- 미러 경로: `api/providers/trace/README.md`
+
+## 한글 요약
+
+추적 공급자 이 디렉터리에는 Dify 작업 추적 데이터(워크플로, 메시지, 도구, 조정 등)를 외부 관찰 백엔드(Langfuse, LangSmith, OpenTelemetry 스타일 내보내기 등)로 보내는 선택적 작업 공간 패키지가 들어 있습니다. VDB 공급자와 달리 추적 플러그인은 진입점을 통해 검색되지 않습니다. API 코어는 공급자 ID 및 매핑을 등록한 후 core/ops/ops 추적 관리자.py에서 명시적으로 패키지를 가져옵니다. 건축 | 레이어 | 위치 | 역할 | | | | | | 계약 | api/core/ops/base 추적 인스턴스.py, api/core/ops/entities/trace 엔터티.py, api/core/ops/entities/config 엔터티.py | BaseTraceInstance, BaseTracingConfig 및 형식화된 TraceInfo 페이로드 | | 레지스트리 | api/core/ops/ops 추적 관리자.py | TracingProviderEnum, OpsTraceProviderConfigMap — 공급자 문자열 → 구성 클래스, 암호화된 키 및 추적 클래스 매핑 | | 귀하의 패키지 | api/providers/trace/trace <이름 / | Pydantic 구성 + BaseTraceInstance의 하위 클래스 | 런타임 시 OpsTraceManager dec
+
+## 핵심 발췌
+
+저장된 자격 증명을 추출하고, 구성 모델을 구축하고, 추적 인스턴스를 캐시하고, 구체적인 BaseTraceInfo 하위 유형을 사용하여 추적(추적 정보)을 호출합니다. 구현하는 것 1. 구성 모델(BaseTracingConfig) core.ops.entities.config 엔터티에서 BaseTracingConfig 하위 클래스입니다. Pydantic 검증자를 사용하십시오. 적절한 경우 core.ops.utils의 도우미(예: URL 유효성 검사, 경로가 있는 URL 유효성 검사, 프로젝트 이름 유효성 검사)를 재사용합니다. 필드는 관리자가 사용하는 두 가지 그룹, 즉 비밀 키로 분류됩니다. 저장 시 암호화되는 필드 이름(API 키, 토큰, 비밀번호). 기타 키 — 비밀이 아닌 연결 설정(호스트, 프로젝트 이름, 엔드포인트) OpsTraceProviderConfigMap 항목에 이러한 키 이름을 나열하면 암호화/해독 및 병합 논리가 올바르게 유지됩니다. 2. 추적 인스턴스(BaseTraceInstance) 하위 클래스 BaseTraceIn
+
+## 원문 내용
+
 # Trace providers
 
 This directory holds **optional workspace packages** that send Dify **ops tracing** data (workflows, messages, tools, moderation, etc.) to an external observability backend (Langfuse, LangSmith, OpenTelemetry-style exporters, and others).
