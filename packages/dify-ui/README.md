@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/packages/dify-ui/README.md
+- 미러 경로: `packages/dify-ui/README.md`
+
+## 한글 요약
+
+@langgenius/dify ui 공유 UI 기본 요소, 디자인 토큰, CSS 우선 Tailwind 스타일 및 Dify의 웹/앱에서 사용하는 cn() 유틸리티입니다. 프리미티브는 cva + cn 및 Dify 디자인 토큰으로 스타일이 지정된 [기본 UI] 헤드리스 구성 요소를 둘러싼 얇고 독선적인 래퍼입니다. 업스트림 구성 요소 문서의 경우 [기본 UI 문서 색인]에서 시작하세요. private: true — 이 패키지는 pnpm 작업 공간을 통해 web/에서 사용되며 npm에 게시되지 않습니다. API를 Dify 내부로 취급하지만 작업 공간 내에서는 안정적입니다. 설치 이미 web/package.json에 작업 공간 종속성으로 연결되어 있습니다. 설치할 것이 없습니다. 새 작업 공간 소비자의 경우 다음을 추가합니다. 가져오기 항상 하위 경로에서 가져오기 내보내기 - 배럴 없음: @langgenius/dify ui에서 가져오기(하위 경로 없음)는 의도적으로 지원되지 않습니다. 이는 트리 흔들기를 사소한 것으로 유지하고 기본 요소별로 Storybook/테스트 적용 범위 속성을 만듭니다. 프리미티브 | 카테고리 | 하위 경로 | 메모 | | | | | | 작업 | ./버튼 | cva 변형을 사용한 디자인 시스템 CTA 기본 요소입니다. | | 통제 수단
+
+## 핵심 발췌
+
+| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 네비게이션 | ./페이지 매기기, ./tabs | 페이지 탐색을 위한 페이지 매김; 패널용 탭. | | 오버레이/메뉴 | ./경고 대화 상자, ./컨텍스트 메뉴, ./dialog, ./drawer, ./드롭다운 메뉴, ./popover, ./미리 보기 카드, ./tooltip | 포탈. 아래 [오버레이 및 포털 계약]을 참조하세요. | | 검색/선택기
+
+## 원문 내용
+
 # @langgenius/dify-ui
 
 Shared UI primitives, design tokens, CSS-first Tailwind styles, and the `cn()` utility consumed by Dify's `web/` app.
