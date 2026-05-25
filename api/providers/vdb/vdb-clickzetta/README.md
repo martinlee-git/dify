@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/api/providers/vdb/vdb-clickzetta/README.md
+- 미러 경로: `api/providers/vdb/vdb-clickzetta/README.md`
+
+## 한글 요약
+
+Clickzetta 벡터 데이터베이스 통합 이 모듈은 Dify용 벡터 데이터베이스로서 Clickzetta Lakehouse와의 통합을 제공합니다. 기능 벡터 스토리지: Clickzetta의 기본 VECTOR 유형을 사용하여 고차원 벡터 저장 및 검색 벡터 검색: HNSW 알고리즘을 사용하여 효율적인 유사성 검색 전체 텍스트 검색: 강력한 텍스트 검색 기능을 위해 Clickzetta의 역 인덱스 활용 하이브리드 검색: 더 나은 결과를 위해 벡터 유사성과 전체 텍스트 검색 결합 다국어 지원: 중국어, 영어 및 유니코드 텍스트 처리 지원 내장 확장성: 대규모 배포를 위해 Clickzetta의 분산 아키텍처 활용 구성 필수 환경 변수 7개 구성 매개변수 모두 선택 사항 구성 사용법 1. Clickzetta를 벡터 저장소로 설정 Dify 구성에서 다음을 설정합니다. 2. 테이블 구조 Clickzetta는 자동으로 다음 구조의 테이블을 생성합니다. 전체 텍스트 검색 기능 Clickzetta는 고급을 지원합니다.
+
+## 핵심 발췌
+
+d 여러 분석기를 사용한 전체 텍스트 검색: 분석기 유형 1. 키워드: 토큰화 없음, 전체 문자열을 단일 토큰으로 처리 최적의 용도: 정확한 일치, ID, 코드 1. 영어: 영어 텍스트용으로 설계됨 기능: ASCII 문자 및 숫자 인식, 소문자로 변환 최적의 용도: 영어 콘텐츠 1. 중국어: 중국어 텍스트 토크나이저 기능: 중국어 및 영어 문자 인식, 구두점 제거 최적의 용도: 중국어 또는 혼합 중국어 영어 콘텐츠 1. 유니코드: 다중 토큰 언어 기반 유니코드 기능: 여러 언어의 텍스트 경계 인식 최적의 용도: 다국어 콘텐츠 분석기 모드 최대 단어: 세분화된 토큰화(더 많은 토큰) 스마트: 지능형 토큰화(균형) 전체 텍스트 검색 기능 MATCH ALL(열, 쿼리): 모든 용어가 있어야 합니다.
+
+## 원문 내용
+
 # Clickzetta Vector Database Integration
 
 This module provides integration with Clickzetta Lakehouse as a vector database for Dify.
