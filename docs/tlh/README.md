@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/docs/tlh/README.md
+- 미러 경로: `docs/tlh/README.md`
+
+## 한글 요약
+
+<p align="center" <a href="https://cloud.dify.ai" Dify Cloud</a · <a href="https://docs.dify.ai/getting start/install selfhosted" 셀프 호스팅</a · <a href="https://docs.dify.ai" 설명서</a · <a href="https://dify.ai/pricing" Dify 제품 버전</a </p <p align="center" <a href="https://dify.ai" target=" 공백" <img alt="Static Badge" src="https://img.shields.io/badge/Product F04438" </a <a href="https://dify.ai/pricing" target=" 공백" <img alt="Static Badge" src="https://img.shields.io/badge/free 가격 책정?logo=free&color=%20%23155EEF&label=pricing&labelColor=%20%23528bff" </a <a href="https://discord.gg/FngNHpbcY7" target=" 공백" <img src="https://img.shields.io/discord/1082486657678311454?logo=discord&labelColor=%20%235462eb&logoColor=%20%23f5f5f5&color=%20%235462eb" alt="Discord에서 채팅" </a <a href="https://reddit.com/r/difyai" target=" 공백" <img src="https://img.shields.io/reddit/subreddit subscriber/difyai?style=plastic&logo=reddit&label=r%2Fdifyai&labelColor=white
+
+## 핵심 발췌
+
+" alt="Reddit 팔로우" </a <a href="https://twitter.com/intent/follow?screen name=dify ai" target=" 공백" <img src="https://img.shields.io/twitter/follow/dify ai?logo=X&color=%20%23f5f5f5" alt="X(Twitter) 팔로우" </a <a href="https://www.linkedin.com/company/langgenius/" target=" 공백" <img src="https://custom icon Badges.demolab.com/badge/LinkedIn 0A66C2?logo=linkedin white&logoColor=fff" alt="LinkedIn에서 팔로우" </a <a href="https://hub.docker.com/u/langgenius" target=" 공백" <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/langgenius/dify web?labelColor=%20%23FDB062&color=%20%23f79009" </a <a href="https://github.com/langgenius/dify/graphs/commit Activity" target=" 공백" <img alt="지난달 커밋" src="https://img.shields.io/github/commit 활동/m/langgenius/d
+
+## 원문 내용
+
 ![cover-v5-optimized](../../images/GitHub_README_if.png)
 
 <p align="center">
