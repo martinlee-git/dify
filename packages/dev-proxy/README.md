@@ -1,3 +1,20 @@
+# 읽어보기
+
+- 원문 저장소: `langgenius/dify`
+- 미러 저장소: `martinlee-git/dify`
+- 원문 문서: https://github.com/langgenius/dify/blob/main/packages/dev-proxy/README.md
+- 미러 경로: `packages/dev-proxy/README.md`
+
+## 한글 요약
+
+@langgenius/dev 프록시 프론트엔드 프로젝트를 위한 일반 Hono 기반 개발 프록시입니다. 패키지는 제품별 경로, 쿠키 이름 또는 환경 변수 규칙을 제공하지 않습니다. 모든 프록시된 경로와 업스트림 대상은 로컬 구성 파일에 선언됩니다. 설치 프런트엔드 프로젝트에 스크립트를 추가합니다. 다음을 사용하여 실행합니다. CLI 지원되는 옵션: config, c: 구성 파일 경로. 기본값은 dev Proxy.config.ts입니다. env 파일: 구성 파일을 평가하기 전에 환경 변수를 로드합니다. 호스트: 구성에서 server.host를 재정의합니다. 포트: 구성에서 server.port를 재정의합니다. 감시: 구성 및 환경 파일 변경 사항을 다시 로드합니다. 기본적으로 활성화되어 있습니다. 감시 없음: 구성 및 환경 파일 다시 로드를 비활성화합니다. help, h: 도움말을 인쇄합니다. 대상이 지원되지 않습니다. 경로와 업스트림이 명시적으로 유지되도록 구성 파일에 대상을 넣습니다. CLI는 기본적으로 구성 파일과 명시적 env 파일을 감시합니다. 경로, CORS, 대상 및 쿠키 재작성 변경 사항은 실행 중인 프로세스에 적용됩니다. 확인된 호스트 또는 포트가 변경되면 프록시가 닫힙니다.
+
+## 핵심 발췌
+
+이전 서버를 삭제하고 새 서버를 시작합니다. 구성 모양 구성 파일은 .ts, .mts, .js 또는 .mjs일 수 있습니다. 경로는 선언 순서에 따라 일치합니다. 첫 번째로 일치하는 경로가 승리합니다. 구성된 각 경로는 정확한 경로 및 모든 하위 경로와 모두 일치하므로 '/api' 경로는 /api, /api/apps 및 /api/apps/123과 일치합니다. 기본적으로 자격 증명 CORS는 localhost, 127.0.0.1 및 ::1과 같은 로컬 개발 원본에 허용됩니다. 특정 원본으로 제한하려면: 시나리오 1: 하나의 로컬 경로 그룹을 온라인 백엔드로 프록시 로컬 프런트엔드가 하나의 프록시 서버를 통해 온라인 백엔드를 호출해야 하는 경우 이 방법을 사용합니다. 예를 들어 프런트엔드는 http://127.0.0.1:5001/api/apps를 호출하고 프록시는 이를 https://cloud.example.com/api/apps로 전달합니다. 선택적 .env: 명령: ./.env.local이 프록시를 자동으로 다시 로드하도록 편집합니다. 에스
+
+## 원문 내용
+
 # @langgenius/dev-proxy
 
 Generic Hono-based development proxy for frontend projects. The package does not ship any product-specific routes, cookie names, or environment variable conventions. Every proxied path and upstream target is declared in a local config file.
