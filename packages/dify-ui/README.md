@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 탐색 | ./페이지 매기기, ./tabs | 페이지 탐색을 위한 페이지 매김; 패널용 탭. | | 오버레이/메뉴 | ./경고 대화 상자, ./컨텍스트 메뉴, ./dialog, ./drawer, ./드롭다운 메뉴, ./popover, ./미리 보기 카드, ./tooltip | 포탈. 아래 [오버레이 및 포털 계약]을 참조하세요. | | 검색/선택기
+| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./textarea, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 탐색 | ./페이지 매기기, ./tabs | 페이지 탐색을 위한 페이지 매김; 패널용 탭. | | 오버레이/메뉴 | ./경고 대화 상자, ./컨텍스트 메뉴, ./dialog, ./drawer, ./드롭다운 메뉴, ./popover, ./미리 보기 카드, ./tooltip | 포탈. 아래 [오버레이 및 포털 계약]을 참조하세요. | | 시든
 
 ## 원문 내용
 
@@ -51,6 +51,7 @@ import { FieldControl, FieldLabel, FieldRoot } from '@langgenius/dify-ui/field'
 import { Form } from '@langgenius/dify-ui/form'
 import { Popover, PopoverContent, PopoverTrigger } from '@langgenius/dify-ui/popover'
 import { SegmentedControl, SegmentedControlItem } from '@langgenius/dify-ui/segmented-control'
+import { Textarea } from '@langgenius/dify-ui/textarea'
 import '@langgenius/dify-ui/styles.css' // once, in the app root
 ```
 
@@ -58,17 +59,17 @@ Importing from `@langgenius/dify-ui` (no subpath) is intentionally not supported
 
 ## Primitives
 
-| Category         | Subpath                                                                                                                                                          | Notes                                                  |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| Actions          | `./button`                                                                                                                                                       | Design-system CTA primitive with `cva` variants.       |
-| Controls         | `./segmented-control`                                                                                                                                            | SegmentedControl for mode, filter, and view selection. |
-| Feedback         | `./meter`, `./toast`                                                                                                                                             | Meter is inline status; Toast owns the `z-60` layer.   |
-| Form             | `./form`, `./field`, `./fieldset`, `./input`, `./checkbox`, `./checkbox-group`, `./radio`, `./radio-group`, `./number-field`, `./select`, `./slider`, `./switch` | Native form boundary, field semantics, and controls.   |
-| Layout           | `./scroll-area`                                                                                                                                                  | Custom-styled scrollbar over the host viewport.        |
-| Media            | `./avatar`                                                                                                                                                       | Avatar root, image, and fallback primitives.           |
-| Navigation       | `./pagination`, `./tabs`                                                                                                                                         | Pagination for page navigation; Tabs for panels.       |
-| Overlay / menu   | `./alert-dialog`, `./context-menu`, `./dialog`, `./drawer`, `./dropdown-menu`, `./popover`, `./preview-card`, `./tooltip`                                        | Portalled. See [Overlay & portal contract] below.      |
-| Search / pickers | `./autocomplete`, `./combobox`, `./select`                                                                                                                       | Search input, searchable picker, and closed picker.    |
+| Category         | Subpath                                                                                                                                                                        | Notes                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
+| Actions          | `./button`                                                                                                                                                                     | Design-system CTA primitive with `cva` variants.       |
+| Controls         | `./segmented-control`                                                                                                                                                          | SegmentedControl for mode, filter, and view selection. |
+| Feedback         | `./meter`, `./toast`                                                                                                                                                           | Meter is inline status; Toast owns the `z-60` layer.   |
+| Form             | `./form`, `./field`, `./fieldset`, `./input`, `./textarea`, `./checkbox`, `./checkbox-group`, `./radio`, `./radio-group`, `./number-field`, `./select`, `./slider`, `./switch` | Native form boundary, field semantics, and controls.   |
+| Layout           | `./scroll-area`                                                                                                                                                                | Custom-styled scrollbar over the host viewport.        |
+| Media            | `./avatar`                                                                                                                                                                     | Avatar root, image, and fallback primitives.           |
+| Navigation       | `./pagination`, `./tabs`                                                                                                                                                       | Pagination for page navigation; Tabs for panels.       |
+| Overlay / menu   | `./alert-dialog`, `./context-menu`, `./dialog`, `./drawer`, `./dropdown-menu`, `./popover`, `./preview-card`, `./tooltip`                                                      | Portalled. See [Overlay & portal contract] below.      |
+| Search / pickers | `./autocomplete`, `./combobox`, `./select`                                                                                                                                     | Search input, searchable picker, and closed picker.    |
 
 Utilities:
 
@@ -89,7 +90,7 @@ Use `Form` for the submit boundary. It renders a native `<form>`, preserves Ente
 
 Use `FieldRoot` for each standalone named field. A field must have a stable `name`, a label relationship, and either a `FieldControl` or another control that participates in the same Base UI field context. Prefer a visible label for normal form rows; when the surrounding UI already supplies the visible text, use the matching label primitive visually hidden or put `aria-label` on the actual interactive control. `FieldDescription` and `FieldError` provide the message relationships that screen readers need, while the Dify wrapper adds the default Form Input Set styling from the design system.
 
-Choose the label primitive by the control semantics. Text-like inputs, input-based `Combobox` / `Autocomplete`, single `Checkbox` / `Radio`, `Switch`, and `NumberField` use `FieldLabel`. Trigger-based `Select` fields use `SelectLabel`; `Slider` fields use `SliderLabel`, with per-thumb `aria-label` only when the thumbs need distinct names. `SelectGroupLabel` and `AutocompleteGroupLabel` only label grouped options inside their popup content; they are not field labels.
+Choose the label primitive by the control semantics. Text-like inputs, `Textarea`, input-based `Combobox` / `Autocomplete`, single `Checkbox` / `Radio`, `Switch`, and `NumberField` use `FieldLabel`. Trigger-based `Select` fields use `SelectLabel`; `Slider` fields use `SliderLabel`, with per-thumb `aria-label` only when the thumbs need distinct names. `SelectGroupLabel` and `AutocompleteGroupLabel` only label grouped options inside their popup content; they are not field labels.
 
 Use `FieldsetRoot` and `FieldsetLegend` when one field is represented by a group of related controls, such as checkbox groups, radio groups, multi-thumb sliders, or a section that combines several inputs. For checkbox and radio groups, wrap each option with `FieldItem` and give each option its own label:
 
