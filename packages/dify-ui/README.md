@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./textarea, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 탐색 | ./페이지 매기기, ./tabs | 페이지 탐색을 위한 페이지 매김; 패널용 탭. | | 오버레이/메뉴 | ./경고 대화 상자, ./컨텍스트 메뉴, ./dialog, ./drawer, ./드롭다운 메뉴, ./popover, ./미리 보기 카드, ./tooltip | 포탈. 아래 [오버레이 및 포털 계약]을 참조하세요. | | 시든
+| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 디스플레이 | ./kbd | 키보드 입력 및 단축키 키캡 프리미티브. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./textarea, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 탐색 | ./페이지 매기기, ./tabs | 페이지 탐색을 위한 페이지 매김; 패널용 탭. | | 오버레이/메뉴 | ./경고 대화 상자, ./컨텍스트 메뉴, ./dialog, ./drawer, ./드롭다운 메뉴, ./popover, ./미리 보기 카드, .
 
 ## 원문 내용
 
@@ -49,6 +49,7 @@ import { Dialog, DialogContent, DialogTrigger } from '@langgenius/dify-ui/dialog
 import { Drawer, DrawerPopup, DrawerTrigger } from '@langgenius/dify-ui/drawer'
 import { FieldControl, FieldLabel, FieldRoot } from '@langgenius/dify-ui/field'
 import { Form } from '@langgenius/dify-ui/form'
+import { Kbd, KbdGroup } from '@langgenius/dify-ui/kbd'
 import { Popover, PopoverContent, PopoverTrigger } from '@langgenius/dify-ui/popover'
 import { SegmentedControl, SegmentedControlItem } from '@langgenius/dify-ui/segmented-control'
 import { Textarea } from '@langgenius/dify-ui/textarea'
@@ -63,6 +64,7 @@ Importing from `@langgenius/dify-ui` (no subpath) is intentionally not supported
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
 | Actions          | `./button`                                                                                                                                                                     | Design-system CTA primitive with `cva` variants.       |
 | Controls         | `./segmented-control`                                                                                                                                                          | SegmentedControl for mode, filter, and view selection. |
+| Display          | `./kbd`                                                                                                                                                                        | Keyboard input and shortcut keycap primitives.         |
 | Feedback         | `./meter`, `./toast`                                                                                                                                                           | Meter is inline status; Toast owns the `z-60` layer.   |
 | Form             | `./form`, `./field`, `./fieldset`, `./input`, `./textarea`, `./checkbox`, `./checkbox-group`, `./radio`, `./radio-group`, `./number-field`, `./select`, `./slider`, `./switch` | Native form boundary, field semantics, and controls.   |
 | Layout           | `./scroll-area`                                                                                                                                                                | Custom-styled scrollbar over the host viewport.        |
