@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-difyctl 도움말 외부, difyctl 도움말 환경. 명령 전체 명령 목록을 보려면 difyctl help를 실행하세요. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 출력 형식 | 플래그 | 행동 | | | | | (없음) | 휴먼 테이블, 열 크기가 터미널에 자동으로 조정됩니다. | | 오 넓은 | 테이블과 동일하며 열 잘림이 없습니다. | | 오 JSON | 예쁘게 인쇄된 JSON, 기계 분석 가능, 안정적인 모양. | | 오 야믈 | o json의 YAML 미러입니다. | | 오 이름 | ID만, 개행으로 구분 - xargs로 파이프됩니다. | | 오 텍스트 | kubectl 설명 스타일 휴먼 텍스트(설명, 실행). | 오류는 JSON 모드에서 JSON 봉투를 stderr로 내보냅니다. 그렇지 않으면 인간의 메시지입니다. 종료 코드는 결정적입니다. 구성 | 운영체제 | 구성 경로 | | | | | 리눅스 | ${XDG 구성 홈: $HOME/.config}/difyctl/ | | macOS | $HOME/.config/difyctl/ | | 윈도우 | %APPDATA%\difyctl\ | 오버리
+difyctl 도움말 외부, difyctl 도움말 환경. 명령 전체 명령 목록을 보려면 difyctl help를 실행하십시오. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 출력 형식 | 플래그 | 행동 | | | | | (없음) | 휴먼 테이블, 열 크기가 터미널에 자동으로 조정됩니다. | | 오 넓은 | 테이블과 동일하며 열 잘림이 없습니다. | | 오 JSON | 예쁘게 인쇄된 JSON, 기계 분석 가능, 안정적인 모양. | | 오 야믈 | o json의 YAML 미러입니다. | | 오 이름 | ID만, 개행으로 구분 - xargs로 파이프됩니다. | | 오 텍스트 | kubectl 설명 스타일 휴먼 텍스트(설명, 실행). | 오류는 JSON 모드에서 JSON 봉투를 stderr로 내보냅니다. 그렇지 않으면 인간의 메시지입니다. 종료 코드는 결정적입니다. 구성 | OS | 구성 경로 | | | | | 리눅스 | ${XDG 구성 홈: $HOME/.config}/difyctl/ | | macOS | $HOME/.config/difyctl/ | | 윈도우 | %APPDATA%\difyctl\ | 오버리
 
 ## 원문 내용
 
