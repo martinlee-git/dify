@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-difyctl 도움말 외부, difyctl 도움말 환경. 명령 전체 명령 목록을 보려면 difyctl help를 실행하십시오. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 출력 형식 | 플래그 | 행동 | | | | | (없음) | 휴먼 테이블, 열 크기가 터미널에 자동으로 조정됩니다. | | 오 넓은 | 테이블과 동일하며 열 잘림이 없습니다. | | 오 JSON | 예쁘게 인쇄된 JSON, 기계 분석 가능, 안정적인 모양. | | 오 야믈 | o json의 YAML 미러입니다. | | 오 이름 | ID만, 개행으로 구분 - xargs로 파이프됩니다. | | 오 텍스트 | kubectl 설명 스타일 휴먼 텍스트(설명, 실행). | 오류는 JSON 모드에서 JSON 봉투를 stderr로 내보냅니다. 그렇지 않으면 인간의 메시지입니다. 종료 코드는 결정적입니다. 구성 | OS | 구성 경로 | | | | | 리눅스 | ${XDG 구성 홈: $HOME/.config}/difyctl/ | | macOS | $HOME/.config/difyctl/ | | 윈도우 | %APPDATA%\difyctl\ | 오버리
+difyctl 도움말 외부, difyctl 도움말 환경, difyctl 도움말 에이전트. 명령 전체 명령 목록을 보려면 difyctl help를 실행하십시오. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 에이전트(및 스크립팅)의 경우 difyctl 도움말 에이전트(교차 명령 운영 가이드(출력, 검색, 인증, 종료 코드, 오류, HITL, 재시도))로 시작하세요. 모든 도움말 화면도 기계에서 읽을 수 있습니다. difyctl help o json은 전체 명령 트리와 전역 계약(종료 코드, 출력 형식, 오류 봉투, HITL 프로토콜)을 덤프하고 difyctl <cmd help o json은 하나의 명령 설명자를 반환합니다. 에이전트 스킬 difyctl Skill install은 단일 순수 위임 SKILL.md를 로컬 에이전트에 설치하여 자동으로 로드합니다. 이 기술은 명령 세트를 고정하지 않습니다. 라이브 서핑을 위해 difyctl help o json의 에이전트를 가리킵니다.
 
 ## 원문 내용
 
@@ -50,12 +50,24 @@ difyctl run app <app-id> "hello" -o json | jq .answer    # JSON output
 difyctl run app <app-id> --input name=world --input topic=cats   # workflow inputs
 ```
 
-Background docs: `difyctl help account`, `difyctl help external`, `difyctl help environment`.
+Background docs: `difyctl help account`, `difyctl help external`, `difyctl help environment`, `difyctl help agent`.
 
 ## Commands
 
 Run `difyctl --help` for the full list of commands.
 Run `difyctl <cmd> --help` for per-command reference.
+
+For agents (and scripting), start with `difyctl help agent` — the cross-command operating guide (output, discovery, auth, exit codes, errors, HITL, retry). Every help surface is also machine-readable: `difyctl help -o json` dumps the whole command tree plus the global contract (exit codes, output formats, error envelope, HITL protocol), and `difyctl <cmd> --help -o json` returns one command's descriptor.
+
+## Agent skill
+
+`difyctl skills install` installs a single, pure-delegation `SKILL.md` into your local agents so they auto-load it. The skill does not freeze the command set — it points the agent at `difyctl help -o json` for the live surface, so it never drifts from your binary. It is embedded in the binary (version-stamped) rather than checked in.
+
+- `difyctl skills install` — dry-run: detect installed agents (Claude Code, Codex, opencode, Cursor, pi) and print where the skill would land. Writes nothing.
+- `difyctl skills install --yes` — write to every detected agent, printing each path. `--agent claude-code[,cursor]` restricts to a subset; `<dir>` forces one explicit directory (handy when your agent isn't detected).
+- `difyctl skills install --stdout` — print the `SKILL.md` to stdout (for piping or self-install); writes nothing.
+
+Detection is by config-directory existence (`~/.claude`, `~/.codex`, `~/.config/opencode`, `~/.cursor`, `~/.pi`). If a copy ever looks stale, run `difyctl version` and re-run `difyctl skills install`.
 
 ## Output formats
 
