@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-difyctl 도움말 외부, difyctl 도움말 환경, difyctl 도움말 에이전트. 명령 전체 명령 목록을 보려면 difyctl help를 실행하십시오. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 에이전트(및 스크립팅)의 경우 difyctl 도움말 에이전트(교차 명령 운영 가이드(출력, 검색, 인증, 종료 코드, 오류, HITL, 재시도))로 시작하세요. 모든 도움말 화면도 기계에서 읽을 수 있습니다. difyctl help o json은 전체 명령 트리와 전역 계약(종료 코드, 출력 형식, 오류 봉투, HITL 프로토콜)을 덤프하고 difyctl <cmd help o json은 하나의 명령 설명자를 반환합니다. 에이전트 스킬 difyctl Skill install은 단일 순수 위임 SKILL.md를 로컬 에이전트에 설치하여 자동으로 로드합니다. 이 기술은 명령 세트를 고정하지 않습니다. 라이브 서핑을 위해 difyctl help o json의 에이전트를 가리킵니다.
+difyctl 도움말 외부, difyctl 도움말 환경, difyctl 도움말 에이전트. 명령 전체 명령 목록을 보려면 difyctl help를 실행하세요. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 에이전트(및 스크립팅)의 경우 difyctl 도움말 에이전트(교차 명령 운영 가이드(출력, 검색, 인증, 종료 코드, 오류, HITL, 재시도))로 시작하세요. 모든 도움말 화면도 기계에서 읽을 수 있습니다. difyctl help o json은 전체 명령 트리와 전역 계약(종료 코드, 출력 형식, 오류 봉투, HITL 프로토콜)을 덤프하고 difyctl <cmd help o json은 하나의 명령 설명자를 반환합니다. 에이전트 스킬 difyctl Skill install은 단일 순수 위임 SKILL.md를 로컬 에이전트에 설치하여 자동으로 로드합니다. 이 기술은 명령 세트를 고정하지 않습니다. 라이브 서핑을 위해 difyctl help o json의 에이전트를 가리킵니다.
 
 ## 원문 내용
 
