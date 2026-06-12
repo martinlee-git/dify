@@ -7,7 +7,7 @@
 
 ## 한글 요약
 
-추적 공급자 이 디렉터리에는 Dify 작업 추적 데이터(워크플로, 메시지, 도구, 조정 등)를 외부 관찰 백엔드(Langfuse, LangSmith, OpenTelemetry 스타일 내보내기 등)로 보내는 선택적 작업 공간 패키지가 들어 있습니다. VDB 공급자와 달리 추적 플러그인은 진입점을 통해 검색되지 않습니다. API 코어는 공급자 ID 및 매핑을 등록한 후 core/ops/ops 추적 관리자.py에서 명시적으로 패키지를 가져옵니다. 건축 | 레이어 | 위치 | 역할 | | | | | | 계약 | api/core/ops/base 추적 인스턴스.py, api/core/ops/entities/trace 엔터티.py, api/core/ops/entities/config 엔터티.py | BaseTraceInstance, BaseTracingConfig 및 형식화된 TraceInfo 페이로드 | | 레지스트리 | api/core/ops/ops 추적 관리자.py | TracingProviderEnum, OpsTraceProviderConfigMap — 공급자 문자열 → 구성 클래스, 암호화된 키 및 추적 클래스 매핑 | | 귀하의 패키지 | api/providers/trace/trace <이름 / | Pydantic 구성 + BaseTraceInstance의 하위 클래스 | 런타임 시 OpsTraceManager dec
+추적 공급자 이 디렉터리에는 Dify 작업 추적 데이터(워크플로, 메시지, 도구, 중재 등)를 외부 관찰 백엔드(Langfuse, LangSmith, OpenTelemetry 스타일 내보내기 등)로 보내는 선택적 작업 공간 패키지가 들어 있습니다. VDB 공급자와 달리 추적 플러그인은 진입점을 통해 검색되지 않습니다. API 코어는 공급자 ID 및 매핑을 등록한 후 core/ops/ops 추적 관리자.py에서 명시적으로 패키지를 가져옵니다. 건축 | 레이어 | 위치 | 역할 | | | | | | 계약 | api/core/ops/base 추적 인스턴스.py, api/core/ops/entities/trace 엔터티.py, api/core/ops/entities/config 엔터티.py | BaseTraceInstance, BaseTracingConfig 및 형식화된 TraceInfo 페이로드 | | 레지스트리 | api/core/ops/ops 추적 관리자.py | TracingProviderEnum, OpsTraceProviderConfigMap — 공급자 문자열 → 구성 클래스, 암호화된 키 및 추적 클래스 매핑 | | 귀하의 패키지 | api/providers/trace/trace <이름 / | Pydantic 구성 + BaseTraceInstance의 하위 클래스 | 런타임 시 OpsTraceManager dec
 
 ## 핵심 발췌
 
