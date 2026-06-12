@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 디스플레이 | ./축소 가능, ./kbd | 축소 가능한 공개 기본 요소; 키보드 입력 및 단축키 키캡 기본 요소. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./textarea, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 네비게이션 | ./파일 트리, ./페이지 매김, ./tabs | 미리보기 지향 파일 공개 목록을 위한 FileTree; 페이지 탐색을 위한 페이지 매김; 패널용 탭. | |
+| ./세그먼트 제어 | 모드, 필터 및 보기 선택을 위한 SegmentedControl입니다. | | 디스플레이 | ./축소 가능, ./kbd | 축소 가능한 공개 기본 요소; 키보드 입력 및 단축키 키캡 기본 요소. | | 피드백 | ./미터, ./토스트 | 측정기는 인라인 상태입니다. Toast는 z 60 레이어를 소유하고 있습니다. | | 양식 | ./form, ./field, ./fieldset, ./input, ./textarea, ./checkbox, ./checkbox 그룹, ./radio, ./radio 그룹, ./number 필드, ./select, ./slider, ./switch | 기본 양식 경계, 필드 의미 체계 및 컨트롤. | | 레이아웃 | ./스크롤 영역 | 호스트 뷰포트 위의 사용자 정의 스타일 스크롤 막대입니다. | | 미디어 | ./아바타 | 아바타 루트, 이미지 및 대체 기본 요소. | | 탐색 | ./파일 트리, ./페이지 매김, ./tabs | 미리보기 지향 파일 공개 목록을 위한 FileTree; 페이지 탐색을 위한 페이지 매김; 패널용 탭. | |
 
 ## 원문 내용
 
@@ -77,6 +77,12 @@ Utilities:
 
 - `./cn` — `clsx` + `tailwind-merge` wrapper. Use this for conditional class composition.
 - `./styles.css` — the one CSS entry that ships the design tokens, theme variables, and project utilities/components. Import it once from the app root.
+
+## Button loading and disabled contract
+
+`Button` keeps normal `disabled` controls native-disabled by default so unavailable actions are removed from the keyboard focus order.
+
+When `loading` is true, `Button` defaults `focusableWhenDisabled` to true. Loading represents an action that has already been triggered and is temporarily pending, so the button remains focusable while Base UI still suppresses click, pointer, keyboard activation, and submit-button activation. Pass `focusableWhenDisabled={false}` only when a loading button should use native disabled behavior.
 
 ## Segmented control contract
 
