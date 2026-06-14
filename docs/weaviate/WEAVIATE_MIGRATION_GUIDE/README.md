@@ -7,7 +7,7 @@
 
 ## 한글 요약
 
-Weaviate 마이그레이션 가이드: v1.19 → v1.27 개요 Dify는 Python 클라이언트가 v3.24에서 v4.17로 업데이트되면서 Weaviate v1.19에서 v1.27로 업그레이드되었습니다. 주요 변경 사항 1. Weaviate Server : 1.19.0 → 1.27.0 1. Python Client : weaviate client =3.24.0 → weaviate client==4.17.0 1. gRPC 필수 : Weaviate v1.27에는 gRPC 포트 50051 필요(HTTP 포트 8080에 추가) 1. Docker Compose : 클라이언트 설치를 위한 임시 진입점 재정의 추가 Key 개선 사항 gRPC를 통한 더욱 빠른 벡터 작업 향상된 일괄 처리 향상된 오류 처리 Docker 사용자를 위한 마이그레이션 단계 1단계: 데이터 백업 2단계: Dify 업데이트 3단계: 서비스 시작 4단계: 소스 설치를 위한 마이그레이션 확인 1단계: 종속성 업데이트 2단계: Weaviate 서버 업데이트 문제 해결 오류: "'weaviate.classes'라는 모듈이 없습니다." 해결책: 오류: "gRPC 상태 확인 실패" 해결책: 오류: "Weaviate 버전 1.19.0은 그렇지 않습니다. 지원됨" 솔루션: 데이터 마이그레이션 실패 솔루션: 롤백 지침 구성 요소
+Weaviate 마이그레이션 가이드: v1.19 → v1.27 개요 Dify는 Python 클라이언트가 v3.24에서 v4.17로 업데이트되면서 Weaviate v1.19에서 v1.27로 업그레이드되었습니다. 주요 변경 사항 1. Weaviate Server : 1.19.0 → 1.27.0 1. Python Client : weaviate client =3.24.0 → weaviate client==4.17.0 1. gRPC 필수 : Weaviate v1.27에는 gRPC 포트 50051 필요(HTTP 포트 8080에 추가) 1. Docker Compose : 클라이언트 설치를 위한 임시 진입점 재정의 추가 Key 개선 사항 gRPC를 통한 더욱 빠른 벡터 작업 향상된 일괄 처리 향상된 오류 처리 Docker 사용자를 위한 마이그레이션 단계 1단계: 데이터 백업 2단계: Dify 업데이트 3단계: 서비스 시작 4단계: 소스 설치를 위한 마이그레이션 확인 1단계: 종속성 업데이트 2단계: Weaviate 서버 업데이트 문제 해결 오류: "'weaviate.classes'라는 모듈이 없습니다." 해결책: 오류: "gRPC 상태 확인 실패" 해결책: 오류: "Weaviate 버전 1.19.0은 그렇지 않습니다. 지원됨" 솔루션: 데이터 마이그레이션 실패 솔루션: 롤백 지침 구성요소
 
 ## 핵심 발췌
 
