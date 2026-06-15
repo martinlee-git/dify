@@ -7,7 +7,7 @@
 
 ## 한글 요약
 
-Dify CLI — E2E 테스트 스위트 라이브 Dify 서버에 대해 실제 difyctl 바이너리를 실행하는 엔드투엔드 테스트입니다. 모든 테스트는 격리된 임시 구성 디렉터리를 사용하므로 테스트 파일 간에 상태가 누출되지 않습니다. 디렉터리 레이아웃 버전 지원 difyctl은 두 가지 Dify 버전을 지원합니다. 테스트 스위트는 자동으로 조정됩니다. | 판 | DIFY E2E 에디션 | 작업공간 | EE 전용 사례 | | | | | | | 커뮤니티 에디션(CE) | ce(기본값) | 1 | 건너뛰었습니다 | | 엔터프라이즈 에디션(EE) | 어이 | 2(자동 생성) | 활성 | EE 전용 테스트 케이스 Enterprise Edition 기능(독립 작업 공간 간 작업 공간 전환, 작업 공간 간 앱 쿼리 등)이 필요한 테스트는 이름에 [EE] 태그가 지정되고 helpers/skip.ts의 enterpriseOnlyIt() / enterpriseOnlyDescribe()로 래핑됩니다. CE 모드에서는 이러한 테스트가 자동으로 건너뜁니다. 설정 자격 증명 템플릿을 복사하고 값을 입력합니다. Community Edition(CE) - 최소 3개 변수 | 변수 | 설명 | | | | | DIFY E2E 호스트 | 서버 기본 URL(http://localhost) |
+Dify CLI — E2E 테스트 스위트 라이브 Dify 서버에 대해 실제 difyctl 바이너리를 실행하는 엔드투엔드 테스트입니다. 모든 테스트는 격리된 임시 구성 디렉터리를 사용하므로 테스트 파일 간에 상태가 누출되지 않습니다. 디렉터리 레이아웃 버전 지원 difyctl은 두 가지 Dify 버전을 지원합니다. 테스트 스위트는 자동으로 조정됩니다. | 판 | DIFY E2E 에디션 | 작업공간 | EE 전용 사례 | | | | | | | 커뮤니티 에디션(CE) | ce(기본값) | 1 | 건너뛰었습니다 | | 엔터프라이즈 에디션(EE) | 어이 | 2 (auto created) | 활성 | EE 전용 테스트 케이스 Enterprise Edition 기능(독립 작업 공간 간 작업 공간 전환, 작업 공간 간 앱 쿼리 등)이 필요한 테스트는 이름에 [EE] 태그가 지정되고 helpers/skip.ts의 enterpriseOnlyIt() / enterpriseOnlyDescribe()로 래핑됩니다. CE 모드에서는 이러한 테스트가 자동으로 건너뜁니다. 설정 자격 증명 템플릿을 복사하고 값을 입력합니다. Community Edition(CE) - 최소 3개 변수 | 변수 | 설명 | | | | | DIFY E2E 호스트 | 서버 기본 URL(http://localhost) |
 
 ## 핵심 발췌
 
