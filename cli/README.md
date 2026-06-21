@@ -7,7 +7,7 @@
 
 ## 한글 요약
 
-[Dify] 플랫폼용 difyctl CLI 클라이언트입니다. 브라우저 장치 흐름 로그인, 앱 목록/검사, 구조화된 입력으로 실행, 출력을 JSON, YAML 또는 인간 텍스트로 구문 분석합니다. 설치(에지, 내부) 커밋당 에지 빌드가 Cloudflare R2에 게시됩니다. 설치 프로그램 스크립트는 이 저장소에 있습니다. 바이너리는 DIFYCTL R2 BASE(내부 공유)를 통해 R2에서 가져옵니다. | 환경 | 기본값 | 목적 | | | | | | DIFYCTL R2 베이스 | — (필수) | R2 공공 기반, 예: https://pub ….r2.dev. | | DIFYCTL 채널 | 가장자리 | 설치할 채널입니다. | | DIFYCTL 설치 디렉토리 | $HOME/.local/bin | 바이너리가 기록되는 디렉터리(<dir /difyctl). | | DIFYCTL 버전 | 최신 | 정확한 게시 버전을 고정하세요. | | DIFYCTL 커밋 | 최신 | git commit(짧은 또는 전체 sha)으로 고정합니다. | | DIFYCTL R2 접두사 | difyctl | 포인터 JSON(manifest.json / index.json)에 대한 R2 키 루트입니다. | | DIFYCTL R2 BIN 접두사 | difyctl/bin | 바이너리용 R2 키 루트(수명 주기/TTL 대상) | 기본적으로 채널 포인터(최신 빌드)가 설치됩니다. 세트D
+[Dify] 플랫폼용 difyctl CLI 클라이언트입니다. 브라우저 장치 흐름 로그인, 앱 목록/검사, 구조화된 입력으로 실행, 출력을 JSON, YAML 또는 인간 텍스트로 구문 분석합니다. 설치(에지, 내부) 커밋당 에지 빌드가 Cloudflare R2에 게시됩니다. 설치 프로그램 스크립트는 이 저장소에 있습니다. 바이너리는 DIFYCTL R2 BASE(내부 공유)를 통해 R2에서 가져옵니다. | 환경 | 기본값 | 목적 | | | | | | DIFYCTL R2 베이스 | — (필수) | R2 공공 기반, 예: https://pub ….r2.dev. | | DIFYCTL 채널 | 가장자리 | 설치할 채널입니다. | | DIFYCTL 설치 디렉토리 | $HOME/.local/bin | 바이너리가 기록되는 디렉터리(<dir /difyctl). | | DIFYCTL 버전 | 최신 | 정확한 게시 버전을 고정하세요. | | DIFYCTL 커밋 | 최신 | git commit(짧은 또는 전체 sha)으로 고정합니다. | | DIFYCTL R2 접두사 | difyctl | 포인터 JSON(manifest.json / index.json)에 대한 R2 키 루트입니다. | | DIFYCTL R2 BIN 접두사 | difyctl/bin | 바이너리용 R2 키 루트(수명 주기/TTL 대상) | 기본적으로 채널 포인터(최신 빌드)가 설치됩니다. 세트 D
 
 ## 핵심 발췌
 
