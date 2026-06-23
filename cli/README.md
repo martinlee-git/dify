@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-특정 과거 빌드를 설치하기 위한 IFYCTL COMMIT(예: ce4af86) 또는 DIFYCTL VERSION — 둘 다 채널의 index.json을 통해 확인됩니다. Windows: $env:DIFYCTL R2 BASE='<BASE '; irm https://raw.githubusercontent.com/langgenius/dify/main/cli/scripts/install r2.ps1 | iex(동일한 환경 변수, 예: $env:DIFYCTL COMMIT='ce4af86'). 업그레이드하려면 다시 실행하세요. 태그가 지정된 rc/stable 빌드의 경우 GitHub 설치 프로그램(cli.sh 설치)을 사용하세요. 빠른 시작 배경 문서: difyctl 도움말 계정, difyctl 외부 도움말, difyctl 도움말 환경, difyctl 도움말 에이전트. 명령 전체 명령 목록을 보려면 difyctl help를 실행하십시오. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 에이전트(및 스크립팅)의 경우 difyctl 도움말 에이전트(교차 명령 운영 가이드(출력, 검색, 인증, 종료 코드, 오류, HITL, 재시도))로 시작하세요. 모든 도움 서핑
+특정 과거 빌드를 설치하기 위한 IFYCTL COMMIT(예: ce4af86) 또는 DIFYCTL VERSION — 둘 다 채널의 index.json을 통해 확인됩니다. Windows: $env:DIFYCTL R2 BASE='<BASE '; irm https://raw.githubusercontent.com/langgenius/dify/main/cli/scripts/install r2.ps1 | iex(동일한 환경 변수, 예: $env:DIFYCTL COMMIT='ce4af86'). 업그레이드하려면 다시 실행하세요. 태그가 지정된 rc/stable 빌드의 경우 GitHub 설치 프로그램(cli.sh 설치)을 사용하세요. 빠른 시작 배경 문서: difyctl 도움말 계정, difyctl 외부 도움말, difyctl 도움말 환경, difyctl 도움말 에이전트. 명령 전체 명령 목록을 보려면 difyctl help를 실행하세요. 명령 참조별로 difyctl <cmd 도움말을 실행하세요. 에이전트(및 스크립팅)의 경우 difyctl 도움말 에이전트(교차 명령 운영 가이드(출력, 검색, 인증, 종료 코드, 오류, HITL, 재시도))로 시작하세요. 모든 도움 서핑
 
 ## 원문 내용
 
