@@ -11,7 +11,7 @@
 
 ## 핵심 발췌
 
-이전 서버를 삭제하고 새 서버를 시작합니다. 구성 모양 구성 파일은 .ts, .mts, .js 또는 .mjs일 수 있습니다. 경로는 선언 순서에 따라 일치합니다. 첫 번째로 일치하는 경로가 승리합니다. 구성된 각 경로는 정확한 경로 및 모든 하위 경로와 모두 일치하므로 '/api' 경로는 /api, /api/apps 및 /api/apps/123과 일치합니다. 기본적으로 자격 증명 CORS는 localhost, 127.0.0.1 및 ::1과 같은 로컬 개발 원본에 허용됩니다. 특정 원본으로 제한하려면: 시나리오 1: 하나의 로컬 경로 그룹을 온라인 백엔드로 프록시 로컬 프런트엔드가 하나의 프록시 서버를 통해 온라인 백엔드를 호출해야 하는 경우 이 방법을 사용합니다. 예를 들어 프런트엔드는 http://127.0.0.1:5001/api/apps를 호출하고 프록시는 이를 https://cloud.example.com/api/apps로 전달합니다. 선택적 .env: 명령: ./.env.local이 프록시를 자동으로 다시 로드하도록 편집합니다. 에스
+이전 서버를 삭제하고 새 서버를 시작합니다. 구성 모양 구성 파일은 .ts, .mts, .js 또는 .mjs일 수 있습니다. 경로는 선언 순서에 따라 일치합니다. 첫 번째로 일치하는 경로가 승리합니다. Each configured path matches both the exact path and all child paths, so paths: '/api' matches /api, /api/apps, and /api/apps/123. 기본적으로 자격 증명 CORS는 localhost, 127.0.0.1 및 ::1과 같은 로컬 개발 원본에 허용됩니다. 특정 원본으로 제한하려면: 시나리오 1: 하나의 로컬 경로 그룹을 온라인 백엔드로 프록시 로컬 프런트엔드가 하나의 프록시 서버를 통해 온라인 백엔드를 호출해야 하는 경우 이 방법을 사용합니다. 예를 들어 프런트엔드는 http://127.0.0.1:5001/api/apps를 호출하고 프록시는 이를 https://cloud.example.com/api/apps로 전달합니다. Optional .env: Command: Edits to ./.env.local reload the proxy automatically. 에스
 
 ## 원문 내용
 
